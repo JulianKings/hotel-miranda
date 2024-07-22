@@ -1,0 +1,22 @@
+@use '../const/variables.scss' as *;
+
+.footer {
+    margin-top: 3.75rem;
+    background: url('./assets/background.png');
+    padding: 0 1.38rem;
+
+    &__logo {
+        margin-top: 2rem;
+
+        &__box {
+            height: 5rem;
+            width: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $brown;
+
+        }
+
+    }
+}

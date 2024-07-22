@@ -1,0 +1,58 @@
+@use 'const/variables.scss' as *;
+@use 'components/header.scss';
+@use 'components/footer.scss';
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+@font-face {
+    font-family: 'archivo-offline_italic';
+    src: url('./fonts/archivo-italic-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('./fonts/archivo-italic-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'archivo-offline';
+    src: url('./fonts/archivo-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('./fonts/archivo-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'offline-old_standard_ttitalic';
+    src: url('./fonts/oldstandardtt-italic-webfont.woff2') format('woff2'),
+         url('./fonts/oldstandardtt-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'offline-old_standard_ttbold';
+    src: url('./fonts/oldstandardtt-bold-webfont.woff2') format('woff2'),
+         url('./fonts/oldstandardtt-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'offline-old_standard_ttregular';
+    src: url('./fonts/oldstandardtt-regular-webfont.woff2') format('woff2'),
+         url('./fonts/oldstandardtt-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+body {
+    min-width: 20rem;
+    font-family: $archivo;
+}
