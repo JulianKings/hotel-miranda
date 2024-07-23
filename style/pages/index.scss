@@ -227,6 +227,7 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin-bottom: 0.69rem;
 
         &__title {
             font-weight: 700;
@@ -366,6 +367,51 @@
                 font-size: 0.81rem;
                 line-height: 2.69rem;
             }
+        }
+    }
+
+    &__video {
+        background-color: $black;
+        padding: 0 1.25rem;
+        color: $white;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+
+        &__title {
+            font-weight: 700;
+            font-size: 0.88rem;
+            color: $brown;
+            line-height: 0.95rem;
+            letter-spacing: 0.17rem;
+            text-transform: uppercase;
+        }
+
+        &__caption {
+            margin-top: 2rem;
+            font-weight: 400;
+            font-family: $oldtt;
+            font-size: 3.5rem;
+            line-height: 3.75rem;
+            letter-spacing: -0.0.7rem;
+        }
+
+        &__description {
+            margin-top: 1rem;
+            font-weight: 400;
+            font-size: 0.88rem;
+            line-height: 1.5rem;
+            color: $graytwo;
+        }
+
+        &__content {
+            margin-top: 2rem;
+            max-width: calc(100% - 2.5rem);
+            height: 16.88rem;
+        }
+
+        &__button {
+            margin-top: 2.25rem;
+            width: 64.5%;
         }
     }
 }

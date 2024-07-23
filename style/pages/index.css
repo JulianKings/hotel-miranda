@@ -217,6 +217,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-bottom: 0.69rem;
 }
 .index__rooms__title {
   font-weight: 700;
@@ -340,6 +341,45 @@
 .index__rooms__room-price span {
   font-size: 0.81rem;
   line-height: 2.69rem;
+}
+.index__video {
+  background-color: #222222;
+  padding: 0 1.25rem;
+  color: #fff;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+.index__video__title {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #BEAD8E;
+  line-height: 0.95rem;
+  letter-spacing: 0.17rem;
+  text-transform: uppercase;
+}
+.index__video__caption {
+  margin-top: 2rem;
+  font-weight: 400;
+  font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: 0 0.7rem;
+}
+.index__video__description {
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 0.88rem;
+  line-height: 1.5rem;
+  color: #C2C2C2;
+}
+.index__video__content {
+  margin-top: 2rem;
+  max-width: calc(100% - 2.5rem);
+  height: 16.88rem;
+}
+.index__video__button {
+  margin-top: 2.25rem;
+  width: 64.5%;
 }
 
 /*# sourceMappingURL=index.css.map */
