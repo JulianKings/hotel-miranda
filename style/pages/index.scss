@@ -1,5 +1,6 @@
 @use '../components/button.scss';
 @use '../const/variables.scss' as *;
+@use '../const/mixins.scss' as *;
 
 .index {
     &__button-holder {
@@ -96,6 +97,127 @@
         &__button {
             margin-top: 0.75rem;
             width: 74.5%;
+        }
+    }
+
+    &__about {
+        margin-top: 3.75rem;
+        padding: 0 1.25rem;
+        padding-top: 2.38rem;
+        background-color: $lightgray;
+        padding-bottom: 10.94rem;
+
+        &__title {
+            font-weight: 700;
+            font-size: 0.81rem;
+            line-height: 1.13rem;
+            letter-spacing: 0.17rem;
+            text-transform: uppercase;
+            color: $darkgray;
+        }
+
+        &__caption {
+            margin-top: 2rem;
+            font-family: $oldtt;
+            font-weight: 400;
+            font-size: 3.5rem;
+            line-height: 3.75rem;
+            letter-spacing: -0.07rem;
+
+        }
+
+        &__description {
+            margin-top: 1rem;
+            font-weight: 400;
+            font-size: 0.88rem;
+            line-height: 1.5rem;
+            color: $darkgray;
+        }
+
+        &__button {
+            margin-top: 1.5rem;
+            width: 64.5%;
+        }
+    }
+
+    &__image-cards {
+        position: relative;
+        @include flex-center;
+        flex-direction: column;
+        top: -7.19rem;
+        margin-bottom: -7.19rem;
+
+        &__card {
+            max-height: 37.5rem;
+            max-width: 279px;
+            margin-bottom: 2.81rem;
+        }
+
+        &__image {
+            & img {
+                height: 18.75rem;
+                width: 100%;
+                margin: 0; padding: 0;
+            }
+
+            margin: 0; padding: 0;
+            height: 18.75rem;
+        }
+
+        &__picture {
+            margin-top: 3.38rem;
+        }
+
+        &__translucent {
+            position: absolute;
+            right: 0;
+            top: 3.13rem;
+            z-index: -1;
+        }
+
+        &__title {
+            margin-top: 1.84rem;
+            font-family: $oldtt;
+            font-weight: 400;
+            font-size: 1.88rem;
+            line-height: 1.88rem;
+            letter-spacing: -0.06rem;
+            color: $blackthree;
+
+            &--black {
+                color: $white;
+            }
+        }
+
+        &__description {
+            margin-top: 1.31rem;
+            font-family: $roboto;
+            font-weight: 400;
+            font-size: 0.88rem;
+            line-height: 1.38rem;
+            text-align: center;
+            color: $blackthree;
+            margin-bottom: 2.4rem;
+            max-width: 27ch;
+
+            &--black {
+                color: $white;
+            }
+        }
+
+        &__content {
+            position: relative;
+            height: 18.75rem;
+            max-height: 18.75rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 0.5rem 1rem rgb(34, 34, 34, .02);
+
+            &--black {
+                box-shadow: none;
+                background-color: $black;
+            }
         }
     }
 }

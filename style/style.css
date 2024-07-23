@@ -21,6 +21,11 @@
   width: 1.25rem;
   height: 0.81rem;
 }
+.header__content__menu--cross {
+  height: 0.97rem;
+  width: 0.97rem;
+  margin-right: 0.28rem;
+}
 .header__content__logo {
   margin-left: 2rem;
   display: flex;
