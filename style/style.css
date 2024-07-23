@@ -7,7 +7,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white;
+  background-color: #fff;
   z-index: 20;
 }
 .header__content {
@@ -86,6 +86,55 @@
 .header__navlist__item a {
   text-decoration: none;
   color: black;
+}
+
+.information-header {
+  background-color: #333333;
+  padding: 0 1.25rem;
+  color: #fff;
+  position: relative;
+}
+.information-header__subtitle {
+  padding-top: 4.69rem;
+  text-transform: uppercase;
+  font-size: 0.81rem;
+  line-height: 1.13rem;
+  font-weight: 700;
+  letter-spacing: 0.17rem;
+  max-width: 30ch;
+}
+.information-header__title {
+  margin-top: 1rem;
+  font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.07rem;
+  padding-bottom: 6rem;
+}
+.information-header__navigation {
+  position: absolute;
+  bottom: 0;
+  right: 1.25rem;
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  color: #000;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1.09rem;
+  letter-spacing: -0.03rem;
+}
+.information-header__navigation a {
+  text-decoration: none;
+  color: #000;
+}
+.information-header__navigation span {
+  color: #BEAD8E;
+}
+
+#separator {
+  color: #000;
+  margin: 0 0.5rem;
 }
 
 .footer {
