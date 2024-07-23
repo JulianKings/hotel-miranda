@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Miranda</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/pages/index.css" />
     <script type="text/javascript" src="./scripts/menu.js" defer></script> 
     <script type="text/javascript" src="./scripts/socials.js" defer></script>
-    <script type="text/javascript" src="./scripts/datePicker.js" defer></script> 
+    <script type="text/javascript" src="./scripts/datePicker.js" defer></script>    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script> 
+    <script type="text/javascript" src="./scripts/swiper.js" defer></script>
 </head>
 <body class="content">
     <header class="header">
@@ -112,12 +116,12 @@
 
             <div class="index__image-cards__card index__image-cards__card">
                 <div class="index__image-cards__image">
-                    <img src="./assets/luxury-room-picture.png" alt="A team of people working" />
+                    <img src="./assets/luxury-room-picture.png" alt="A room full of luxury items" />
                 </div>
 
                 <div class="index__image-cards__content index__image-cards__content--black">
                     <div class="index__image-cards__picture">
-                        <img src="./assets/luxury-room.png" alt="Team icon">
+                        <img src="./assets/luxury-room.png" alt="Luxury room">
                     </div>
                     <div class="index__image-cards__title index__image-cards__title--black">
                         Luxury Room
@@ -131,7 +135,195 @@
         </section>
 
         <section class="index__rooms">
+            <div class="index__rooms__title">Rooms</div>
 
+            <div class="index__rooms__caption">Hand Picked Rooms</div>
+
+            <div class="index__rooms__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide index__rooms__container">
+                        <div class="index__rooms__perks">
+                            <img src="./assets/bed_icon.png" alt="Has a bed" />
+                            <img src="./assets/wifi_icon.png" alt="Has wifi" />
+                            <img src="./assets/automobile_icon.png" alt="Has parking" />
+                            <img src="./assets/snowflake_icon.png" alt="Has air conditioner" />
+                            <img src="./assets/gym_icon.png" alt="Gym included" />
+                            <img src="./assets/no_smoke_icon.png" alt="Smoking forbidden" />
+                            <img src="./assets/holiday_icon.png" alt="Drinks allowed" />
+                        </div>
+                        <div class="index__rooms__image">
+                            <img src="./assets/penthouse1.png" />
+                        </div>
+                        <div class="index__rooms__information-holder">
+                            <div class="index__rooms__information">
+                                <div class="index__rooms__room-name">
+                                    Minimap Duplex Room
+                                </div>
+                                <div class="index__rooms__room-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                </div>
+                                <div class="index__rooms__room-price">
+                                    $345<span>/Night</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide index__rooms__container">
+                        <div class="index__rooms__perks">
+                            <img src="./assets/bed_icon.png" alt="Has a bed" />
+                            <img src="./assets/wifi_icon.png" alt="Has wifi" />
+                            <img src="./assets/automobile_icon.png" alt="Has parking" />
+                            <img src="./assets/snowflake_icon.png" alt="Has air conditioner" />
+                            <img src="./assets/gym_icon.png" alt="Gym included" />
+                            <img src="./assets/no_smoke_icon.png" alt="Smoking forbidden" />
+                            <img src="./assets/holiday_icon.png" alt="Drinks allowed" />
+                        </div>
+                        <div class="index__rooms__image">
+                            <img src="./assets/penthouse2.png" />
+                        </div>
+                        <div class="index__rooms__information-holder">
+                            <div class="index__rooms__information">
+                                <div class="index__rooms__room-name">
+                                    Minimap Duplex Room
+                                </div>
+                                <div class="index__rooms__room-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                </div>
+                                <div class="index__rooms__room-price">
+                                    $345<span>/Night</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide index__rooms__container">
+                        <div class="index__rooms__perks">
+                            <img src="./assets/bed_icon.png" alt="Has a bed" />
+                            <img src="./assets/wifi_icon.png" alt="Has wifi" />
+                            <img src="./assets/automobile_icon.png" alt="Has parking" />
+                            <img src="./assets/snowflake_icon.png" alt="Has air conditioner" />
+                            <img src="./assets/gym_icon.png" alt="Gym included" />
+                            <img src="./assets/no_smoke_icon.png" alt="Smoking forbidden" />
+                            <img src="./assets/holiday_icon.png" alt="Drinks allowed" />
+                        </div>
+                        <div class="index__rooms__image">
+                            <img src="./assets/penthouse3.png" />
+                        </div>
+                        <div class="index__rooms__information-holder">
+                            <div class="index__rooms__information">
+                                <div class="index__rooms__room-name">
+                                    Minimap Duplex Room
+                                </div>
+                                <div class="index__rooms__room-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                </div>
+                                <div class="index__rooms__room-price">
+                                    $345<span>/Night</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide index__rooms__container">
+                        <div class="index__rooms__perks">
+                            <img src="./assets/bed_icon.png" alt="Has a bed" />
+                            <img src="./assets/wifi_icon.png" alt="Has wifi" />
+                            <img src="./assets/automobile_icon.png" alt="Has parking" />
+                            <img src="./assets/snowflake_icon.png" alt="Has air conditioner" />
+                            <img src="./assets/gym_icon.png" alt="Gym included" />
+                            <img src="./assets/no_smoke_icon.png" alt="Smoking forbidden" />
+                            <img src="./assets/holiday_icon.png" alt="Drinks allowed" />
+                        </div>
+                        <div class="index__rooms__image">
+                            <img src="./assets/penthouse4.png" />
+                        </div>
+                        <div class="index__rooms__information-holder">
+                            <div class="index__rooms__information">
+                                <div class="index__rooms__room-name">
+                                    Minimap Duplex Room
+                                </div>
+                                <div class="index__rooms__room-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                </div>
+                                <div class="index__rooms__room-price">
+                                    $345<span>/Night</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide index__rooms__container">
+                        <div class="index__rooms__perks">
+                            <img src="./assets/bed_icon.png" alt="Has a bed" />
+                            <img src="./assets/wifi_icon.png" alt="Has wifi" />
+                            <img src="./assets/automobile_icon.png" alt="Has parking" />
+                            <img src="./assets/snowflake_icon.png" alt="Has air conditioner" />
+                            <img src="./assets/gym_icon.png" alt="Gym included" />
+                            <img src="./assets/no_smoke_icon.png" alt="Smoking forbidden" />
+                            <img src="./assets/holiday_icon.png" alt="Drinks allowed" />
+                        </div>
+                        <div class="index__rooms__image">
+                            <img src="./assets/hotel1.png" />
+                        </div>
+                        <div class="index__rooms__information-holder">
+                            <div class="index__rooms__information">
+                                <div class="index__rooms__room-name">
+                                    Minimap Duplex Room
+                                </div>
+                                <div class="index__rooms__room-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                </div>
+                                <div class="index__rooms__room-price">
+                                    $345<span>/Night</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide index__rooms__container">
+                        <div class="index__rooms__perks">
+                            <img src="./assets/bed_icon.png" alt="Has a bed" />
+                            <img src="./assets/wifi_icon.png" alt="Has wifi" />
+                            <img src="./assets/automobile_icon.png" alt="Has parking" />
+                            <img src="./assets/snowflake_icon.png" alt="Has air conditioner" />
+                            <img src="./assets/gym_icon.png" alt="Gym included" />
+                            <img src="./assets/no_smoke_icon.png" alt="Smoking forbidden" />
+                            <img src="./assets/holiday_icon.png" alt="Drinks allowed" />
+                        </div>
+                        <div class="index__rooms__image">
+                            <img src="./assets/hotel2.png" />
+                        </div>
+                        <div class="index__rooms__information-holder">
+                            <div class="index__rooms__information">
+                                <div class="index__rooms__room-name">
+                                    Minimap Duplex Room
+                                </div>
+                                <div class="index__rooms__room-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                </div>
+                                <div class="index__rooms__room-price">
+                                    $345<span>/Night</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="index__rooms__swiper-prev">
+                    <img src="./assets/left.png" id="rooms-slide-left" alt="slide left" />
+                </div>
+                <div class="index__rooms__swiper-next">
+                    <img src="./assets/right.png" id="rooms-slide-right" alt="slide right" />
+                </div>
+            </div>
+        </section>
+
+        <section class="index__video">
+            <div class="index__video__title">Intro video</div>
+            <div class="index__video__caption">Meet With Our Luxury Place</div>
         </section>
     </main>
 
