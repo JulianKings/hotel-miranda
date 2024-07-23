@@ -1,0 +1,101 @@
+@use '../components/button.scss';
+@use '../const/variables.scss' as *;
+
+.index {
+    &__button-holder {
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        width: 64%;
+    }
+
+    &__calendar {
+        padding: 2.25rem 1.25rem;
+        background-color: $black;
+        display: flex;
+        flex-direction: column;
+        gap: 1.88rem;
+
+        font-family: $roboto;
+        color: $white;
+        font-size: 1rem;
+        line-height: 1.17rem;
+        font-weight: 700;
+
+        &__date {
+            display: inline-block;
+            position: absolute;
+            z-index: 8;
+            width: 1.05rem;
+            height: 1.05rem;
+        }
+
+        &__datepicker {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../../assets/calendar.png');
+        }
+
+        &__dateinput {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+            box-sizing: border-box;
+
+            &::-webkit-calendar-picker-indicator {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                cursor: pointer;
+
+            }
+        }
+
+        &__construct {
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.44rem;
+            width: 100%;
+        }
+
+        &__input {
+            font-weight: 400;
+            font-size: 0.88rem;
+            line-height: 1.03rem;
+            border: 0;
+            border-bottom: 0.13rem solid $brown;
+            background-color: $black;
+            padding-bottom: 1rem;
+            color: $white;
+            width: 100%;
+            padding-left: 1.5rem;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &__button {
+            margin-top: 0.75rem;
+            width: 74.5%;
+        }
+    }
+}

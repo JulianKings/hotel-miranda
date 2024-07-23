@@ -1,3 +1,108 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3.75rem;
+  background-color: #BEAD8E;
+  border: 0.06rem solid #BEAD8E;
+  padding: 1.44rem 0;
+  width: 100%;
+  font-family: "Archivo", "archivo-offline", "Roboto", sans-serif, arial;
+  font-weight: 700;
+  font-size: 0.88rem;
+  line-height: 0.95rem;
+  letter-spacing: 0.17rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.button--alternative {
+  background-color: #333333;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+}
 
+.index__button-holder {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 64%;
+}
+.index__calendar {
+  padding: 2.25rem 1.25rem;
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  gap: 1.88rem;
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.17rem;
+  font-weight: 700;
+}
+.index__calendar__date {
+  display: inline-block;
+  position: absolute;
+  z-index: 8;
+  width: 1.05rem;
+  height: 1.05rem;
+}
+.index__calendar__datepicker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/calendar.png");
+}
+.index__calendar__dateinput {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.index__calendar__dateinput::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.index__calendar__construct {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.index__calendar__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.44rem;
+  width: 100%;
+}
+.index__calendar__input {
+  font-weight: 400;
+  font-size: 0.88rem;
+  line-height: 1.03rem;
+  border: 0;
+  border-bottom: 0.13rem solid #BEAD8E;
+  background-color: #222222;
+  padding-bottom: 1rem;
+  color: #fff;
+  width: 100%;
+  padding-left: 1.5rem;
+}
+.index__calendar__input:focus {
+  outline: none;
+}
+.index__calendar__button {
+  margin-top: 0.75rem;
+  width: 74.5%;
+}
 
 /*# sourceMappingURL=index.css.map */

@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/pages/index.css" />
     <script type="text/javascript" src="./scripts/menu.js" defer></script> 
-    <script type="text/javascript" src="./scripts/socials.js" defer></script> 
+    <script type="text/javascript" src="./scripts/socials.js" defer></script>
+    <script type="text/javascript" src="./scripts/datePicker.js" defer></script> 
 </head>
 <body class="content">
     <header class="header">
@@ -42,7 +43,41 @@
     <header class="information-header">
         <div class="information-header__subtitle">the ultimate luxury experience</div>
         <div class="information-header__title">The Perfect Base For You</div>
+        <div class="index__button-holder">
+            <button type="button" class="button">Take a tour</button>
+            <button type="button" class="button button--alternative">Learn more</button>
+        </div>
     </header>
+
+    <main>
+        <section class="index__calendar">
+            <div class="index__calendar__form">
+                <label for="arrival-date" class="index__calendar__label">Arrival Date</label>
+                <div class="index__calendar__construct">
+                    <span class="index__calendar__date">
+                        <span class="index__calendar__datepicker"></span>
+                        <input type="date" id="arrival-date" class="index__calendar__dateinput" />
+                    </span>
+                    <input type="text" id="arrival-date-text" class="index__calendar__input" />
+                </div>
+            </div>
+
+            <div class="index__calendar__form">
+                <label for="departure-date" class="index__calendar__label">Departure Date</label>
+                <div class="index__calendar__construct">
+                    <span class="index__calendar__date">
+                        <span class="index__calendar__datepicker"></span>
+                        <input type="date" id="departure-date" class="index__calendar__dateinput" />
+                    </span>
+                    <input type="text" id="departure-date-text" class="index__calendar__input" />
+                </div>
+            </div>
+
+            <div class="index__calendar__button">
+                <button type="button" class="button">Check Availability</button>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="footer__logo">
