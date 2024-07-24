@@ -1,0 +1,25 @@
+@use '../components/button.scss';
+@use '../components/facilities.scss';
+@use '../const/variables.scss' as *;
+@use '../const/mixins.scss' as *;
+
+.about {
+
+    &__video {
+        margin-top: 3.75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__description {
+            max-width: 88%;
+            margin-top: 2.25rem;
+            font-family: $oldtt;
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 2.47rem;
+            letter-spacing: -0.07rem;
+            text-align: center;
+        }
+    }
+}
