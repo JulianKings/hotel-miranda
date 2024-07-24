@@ -123,5 +123,42 @@
   letter-spacing: -0.07rem;
   text-align: center;
 }
+.about__options {
+  margin-top: 3.19rem;
+  width: 100%;
+  padding: 0 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.25rem;
+}
+.about__options__item {
+  min-height: 9.88rem;
+  transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
+  color: #222222;
+}
+.about__options__item:hover {
+  background-color: #BEAD8E;
+  color: #fff;
+}
+.about__options__image {
+  margin-top: 2.72rem;
+  display: flex;
+  justify-content: center;
+}
+.about__options__image img {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
+}
+.about__options__title {
+  margin-top: 0.76rem;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 0.88rem;
+  text-align: center;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
 
 /*# sourceMappingURL=about.css.map */
