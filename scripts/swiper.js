@@ -1,6 +1,9 @@
 const slideLeft = document.querySelector('.index__rooms__swiper-prev');
 const slideRight = document.querySelector('.index__rooms__swiper-next');
+const slideBigLeft = document.querySelector('.index__menu__left');
+const slideBigRight = document.querySelector('.index__menu__right');
 
+// small buttons
 slideLeft.addEventListener('mouseover', () => {
     const element = document.querySelector('#rooms-slide-left');
     element.src = './assets/left_white.png';
@@ -21,6 +24,27 @@ slideRight.addEventListener('mouseout', () => {
     element.src = './assets/right.png';
 });
 
+// big buttons
+slideBigLeft.addEventListener('mouseover', () => {
+    const element = document.querySelector('#menu-slide-left');
+    element.src = './assets/bigleft_white.png';
+});
+
+slideBigLeft.addEventListener('mouseout', () => {
+    const element = document.querySelector('#menu-slide-left');
+    element.src = './assets/bigleft.png';
+});
+
+slideBigRight.addEventListener('mouseover', () => {
+    const element = document.querySelector('#menu-slide-right');
+    element.src = './assets/bigright_white.png';
+});
+
+slideBigRight.addEventListener('mouseout', () => {
+    const element = document.querySelector('#menu-slide-right');
+    element.src = './assets/bigright.png';
+});
+
 const swiper = new Swiper('.index__rooms__swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -29,7 +53,7 @@ const swiper = new Swiper('.index__rooms__swiper', {
     // Navigation arrows
     navigation: {
       nextEl: '.index__rooms__swiper-next',
-      prevEl: '.index__rooms__swiper-prev',
+      prevEl: '.index__rooms__swiper-prev'
     },
 });
 
@@ -44,4 +68,16 @@ const coreSwiper = new Swiper('.index__facilities__swiper', {
         bulletActiveClass: 'index__facilities__bullet--active',
         clickable: true,
       },
+});
+
+const menuSwiper = new Swiper('.index__menu__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 30,
+
+    navigation: {
+        nextEl: '.index__menu__right',
+        prevEl: '.index__menu__left'
+    },
 });

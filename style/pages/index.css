@@ -470,5 +470,104 @@
 .index__facilities__bullet--active {
   background-color: #BEAD8E;
 }
+.index__menu {
+  margin-top: 3.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  position: relative;
+  padding-top: 7.19rem;
+}
+.index__menu__image {
+  position: absolute;
+  top: 0;
+  right: -1.59rem;
+}
+.index__menu__image img {
+  width: 7.16rem;
+  height: 7.16rem;
+}
+.index__menu__title {
+  font-weight: 700;
+  font-size: 0.88rem;
+  line-height: 0.95rem;
+  letter-spacing: 0.17rem;
+  text-transform: uppercase;
+  color: darkgray;
+}
+.index__menu__caption {
+  margin-top: 1.5rem;
+  font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: 0 0.7rem;
+  color: #222222;
+}
+.index__menu__swiper {
+  margin-top: 2rem;
+  width: 100%;
+}
+.index__menu__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.index__menu__picture img {
+  height: 7.5rem;
+  width: 7.5rem;
+  max-height: 7.5rem;
+  max-width: 7.5rem;
+}
+.index__menu__information {
+  display: flex;
+  flex-direction: column;
+}
+.index__menu__menu-title {
+  margin-top: 0.38rem;
+  font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.04rem;
+}
+.index__menu__menu-description {
+  margin-top: 0.75rem;
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  font-size: 0.88rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+.index__menu__navigation {
+  margin-top: 0.88rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.index__menu__left, .index__menu__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  background-color: #F8F8F8;
+  transition: background-color 0.6s ease-in-out;
+}
+.index__menu__left img, .index__menu__right img {
+  width: 0.77rem;
+  height: 0.77rem;
+}
+.index__menu__left:hover, .index__menu__left:active, .index__menu__right:hover, .index__menu__right:active {
+  background-color: #BEAD8E;
+}
+.index__menu__item {
+  display: flex;
+  gap: 1.88rem;
+  color: #222222;
+  height: 7.5rem;
+}
+.index__menu__item:hover {
+  background-color: #222222;
+  color: #fff;
+}
 
 /*# sourceMappingURL=index.css.map */
