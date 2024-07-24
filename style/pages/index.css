@@ -314,6 +314,7 @@
   font-size: 0.88rem;
   line-height: 0.95rem;
   letter-spacing: 0.17rem;
+  text-transform: uppercase;
   color: #777777;
   text-transform: uppercase;
 }
@@ -442,15 +443,15 @@
 .index__video__title {
   font-weight: 700;
   font-size: 0.88rem;
-  color: #BEAD8E;
   line-height: 0.95rem;
   letter-spacing: 0.17rem;
   text-transform: uppercase;
+  color: #BEAD8E;
 }
 .index__video__caption {
   margin-top: 2rem;
-  font-weight: 400;
   font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
+  font-weight: 400;
   font-size: 3.5rem;
   line-height: 3.75rem;
   letter-spacing: 0 0.7rem;

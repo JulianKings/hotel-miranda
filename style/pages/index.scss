@@ -233,21 +233,14 @@
         margin-bottom: 0.69rem;
 
         &__title {
-            font-weight: 700;
-            font-size: 0.88rem;
-            line-height: 0.95rem;
-            letter-spacing: 0.17rem;
+            @include basicTitle;
             color: $darkgray;
             text-transform: uppercase;
         }
 
         &__caption {
             margin-top: 1.5rem;
-            font-family: $oldtt;
-            font-weight: 400;
-            font-size: 3.5rem;
-            line-height: 3.75rem;
-            letter-spacing: -0.0.7rem;
+            @include basicCaption;
             text-align: center;
             color: $black;
         }
@@ -381,21 +374,13 @@
         padding-bottom: 3rem;
 
         &__title {
-            font-weight: 700;
-            font-size: 0.88rem;
+            @include basicTitle;
             color: $brown;
-            line-height: 0.95rem;
-            letter-spacing: 0.17rem;
-            text-transform: uppercase;
         }
 
         &__caption {
             margin-top: 2rem;
-            font-weight: 400;
-            font-family: $oldtt;
-            font-size: 3.5rem;
-            line-height: 3.75rem;
-            letter-spacing: -0.0.7rem;
+            @include basicCaption;
         }
 
         &__description {
@@ -437,21 +422,13 @@
         }
 
         &__title {
-            font-weight: 700;
-            font-size: 0.88rem;
-            line-height: 0.95rem;
-            letter-spacing: 0.17rem;
-            text-transform: uppercase;
+            @include basicTitle;
             color: darkgray;
         }
 
         &__caption {
             margin-top: 1.5rem;
-            font-family: $oldtt;
-            font-weight: 400;
-            font-size: 3.5rem;
-            line-height: 3.75rem;
-            letter-spacing: -0.0.7rem;
+            @include basicCaption;
             color: $black;
         }
 

@@ -27,6 +27,12 @@
   margin-top: 3.75rem;
   width: 100%;
 }
+.facilities--dark {
+  background-color: #222222;
+  color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 5.06rem;
+}
 .facilities__title {
   font-weight: 700;
   font-size: 0.88rem;
@@ -34,6 +40,9 @@
   letter-spacing: 0.17rem;
   color: #777777;
   text-transform: uppercase;
+}
+.facilities__title--dark {
+  color: #fff;
 }
 .facilities__caption {
   margin-top: 1.5rem;
@@ -45,15 +54,25 @@
   text-align: center;
   color: #222222;
 }
+.facilities__caption--dark {
+  color: #fff;
+}
 .facilities__swiper {
   margin-top: 2rem;
   height: 23.13rem;
   width: 100%;
   position: relative;
 }
+.facilities__swiper--dark {
+  padding: 0 1.25rem;
+}
 .facilities__container {
   position: relative;
   padding: 0 2.23rem;
+}
+.facilities__container--dark {
+  background-color: #292929;
+  padding: 0 1.13rem;
 }
 .facilities__position {
   position: absolute;
@@ -63,6 +82,9 @@
   font-size: 7.5rem;
   line-height: 8.13rem;
   color: rgba(34, 34, 34, 0.04);
+}
+.facilities__position--dark {
+  color: #222222;
 }
 .facilities__image {
   margin-top: 5.06rem;
@@ -80,11 +102,17 @@
   letter-spacing: -0.06rem;
   color: #222222;
 }
+.facilities__text--dark {
+  color: #fff;
+}
 .facilities__description {
   margin-top: 1.75rem;
   color: darkgray;
   font-size: 0.88rem;
   line-height: 1.5rem;
+}
+.facilities__description--dark {
+  color: #fff;
 }
 .facilities__pagination {
   position: relative;
@@ -94,6 +122,17 @@
   display: flex;
   gap: 0.44rem;
   justify-content: center;
+}
+.facilities__pagination--dark {
+  margin-top: 2.5rem;
+}
+.facilities__darkbullet {
+  background-color: #333333;
+  width: 0.44rem;
+  height: 0.44rem;
+  border-radius: 3rem;
+  transition: background-color 0.6s ease-in-out;
+  pointer-events: all !important;
 }
 .facilities__bullet {
   background-color: #EDEDED;
@@ -107,6 +146,9 @@
   background-color: #BEAD8E;
 }
 
+.about {
+  overflow: hidden;
+}
 .about__video {
   margin-top: 3.75rem;
   display: flex;
@@ -159,6 +201,150 @@
   text-align: center;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
+}
+.about__restaurant {
+  margin: 0 1.25rem;
+  margin-top: 3.19rem;
+  box-shadow: 0 0.88rem 1.5rem rgba(184, 184, 184, 0.1);
+  padding: 1.25rem 1.25rem;
+}
+.about__restaurant__image {
+  width: 100%;
+}
+.about__restaurant__image img {
+  width: 100%;
+  height: 14.5rem;
+  max-height: 14.5rem;
+}
+.about__restaurant__title {
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 0.88rem;
+  line-height: 0.95rem;
+  letter-spacing: 0.17rem;
+  text-transform: uppercase;
+  color: #777777;
+}
+.about__restaurant__caption {
+  margin-top: 1.63rem;
+  font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.09rem;
+  letter-spacing: -0.07rem;
+}
+.about__restaurant__description {
+  margin-top: 1.63rem;
+  font-weight: 400;
+  font-size: 0.88rem;
+  line-height: 1.5rem;
+}
+.about__restaurant__button {
+  margin-top: 1rem;
+  width: 73.6%;
+  box-shadow: 0 0.88rem 1.5rem rgba(190, 173, 142, 0.36);
+}
+.about__counter {
+  margin-top: 3.75rem;
+  margin-bottom: 1rem;
+  padding: 0 1.25rem;
+}
+.about__counter__title {
+  font-weight: 700;
+  font-size: 0.88rem;
+  line-height: 0.95rem;
+  letter-spacing: 0.17rem;
+  text-transform: uppercase;
+  color: #777777;
+}
+.about__counter__caption {
+  margin-top: 1.5rem;
+  font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.07rem;
+  color: #222222;
+}
+.about__counter__facts {
+  margin-top: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.about__counter__item {
+  display: flex;
+  width: 100%;
+  margin: 1rem;
+  align-items: center;
+  min-height: 8.38rem;
+}
+.about__counter__image img {
+  width: 4.06rem;
+  height: 4.06rem;
+}
+.about__counter__text {
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-left: 0.88rem;
+}
+.about__counter__number {
+  font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
+  font-weight: 400;
+  font-size: 3.75rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.11rem;
+}
+.about__counter__arrow {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+.about__counter__arrow img {
+  width: 2rem;
+  height: 2rem;
+}
+.about__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__images__swiper {
+  width: 100%;
+  height: auto;
+  padding: 0 1.25rem;
+  min-height: 22.88rem;
+}
+.about__images__container {
+  height: 20.94rem;
+}
+.about__images__container img {
+  height: 20.94rem;
+  width: 20.94rem;
+}
+.about__images__pagination {
+  position: relative;
+  margin-top: 1.5rem;
+  z-index: 10;
+  height: 0.44rem;
+  width: 100%;
+  display: flex;
+  gap: 0.44rem;
+  justify-content: center;
+}
+.about__images__bullet {
+  background-color: #EDEDED;
+  width: 0.44rem;
+  height: 0.44rem;
+  border-radius: 3rem;
+  transition: background-color 0.6s ease-in-out;
+  pointer-events: all !important;
+}
+.about__images__bullet--active {
+  background-color: #BEAD8E;
 }
 
 /*# sourceMappingURL=about.css.map */
