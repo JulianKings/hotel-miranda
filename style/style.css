@@ -21,6 +21,11 @@
   width: 1.25rem;
   height: 0.81rem;
 }
+.header__content__menu--cross {
+  height: 0.97rem;
+  width: 0.97rem;
+  margin-right: 0.28rem;
+}
 .header__content__logo {
   margin-left: 2rem;
   display: flex;
@@ -93,6 +98,7 @@
   padding: 0 1.25rem;
   color: #fff;
   position: relative;
+  padding-bottom: 6rem;
 }
 .information-header__subtitle {
   padding-top: 4.69rem;
@@ -110,7 +116,6 @@
   font-size: 3.5rem;
   line-height: 3.75rem;
   letter-spacing: -0.07rem;
-  padding-bottom: 6rem;
 }
 .information-header__navigation {
   position: absolute;
