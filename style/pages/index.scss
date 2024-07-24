@@ -627,11 +627,101 @@
             gap: 1.88rem;
             color: $black;
             height: 7.5rem;
+            transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
 
             &:hover {
                 background-color: $black;
                 color: $white;
             }
+        }
+    }
+
+    &__images {
+        @include flex-center;
+        margin-top: 3.75rem;
+
+        &__swiper {
+            width: 90%;
+            height: auto;
+            min-height: calc(20.94rem + 1.5rem + 0.44rem);
+        }
+
+        &__container {
+            height: 20.94rem;
+
+            & img {
+                height: 20.94rem;
+                width: 20.94rem;
+            }
+        }
+
+        &__pagination {
+            position: relative;
+            margin-top: 1.5rem;
+            z-index: 10;
+            height: 0.44rem;
+            width: 100%;
+            display: flex;
+            gap: 0.44rem;
+            justify-content: center;
+        }
+
+        &__bullet {
+            background-color: #EDEDED;
+            width: 0.44rem;
+            height: 0.44rem;
+            border-radius: 3rem;
+            transition: background-color 0.6s ease-in-out;
+            pointer-events: all !important;
+
+            &--active {
+                background-color: $brown;
+            }
+        }
+    }
+
+    &__stats {
+        margin-top: 3.75rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3.75rem;
+        align-items: center;
+        padding: 3rem 0;
+        background-color: $black;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__image {
+            & img {
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+
+        &__title {
+            margin-top: 1rem;
+            color: $white;
+            font-family: $roboto;
+            font-size: 3.7rem;
+            font-weight: 700;
+            line-height: 4.12rem;
+
+            & span {
+                font-size: 1rem;
+                line-height: 1.36rem;
+            }
+        }
+
+        &__description {
+            color: $darkgray;
+            font-family: $roboto;
+            font-weight: 709;
+            font-size: 1;
+            line-height: 1.36rem;
         }
     }
 }

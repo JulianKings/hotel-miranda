@@ -81,3 +81,18 @@ const menuSwiper = new Swiper('.index__menu__swiper', {
         prevEl: '.index__menu__left'
     },
 });
+
+const imagesSwiper = new Swiper('.index__images__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    initialSlide: 1,
+    spaceBetween: 10,
+
+    pagination: {
+        el: '.index__images__pagination',
+        bulletClass: 'index__images__bullet',
+        bulletActiveClass: 'index__images__bullet--active',
+        clickable: true,
+      },
+});
