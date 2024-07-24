@@ -72,5 +72,33 @@
   height: 1rem;
   width: 1rem;
 }
+.rooms__pagination {
+  width: 100%;
+  display: flex;
+  gap: 0.63rem;
+  font-family: "Oswald", "offline-oswald", "Archivo", sans-serif, arial;
+  font-weight: 700;
+  font-size: 0.88rem;
+  line-height: 1.19rem;
+  color: #222222;
+}
+.rooms__pagination__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.44rem;
+  width: 2.44rem;
+  max-height: 2.44rem;
+  max-width: 2.44rem;
+  transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
+}
+.rooms__pagination__item img {
+  width: 1rem;
+  height: 1rem;
+}
+.rooms__pagination__item--selected, .rooms__pagination__item:active {
+  background-color: #BEAD8E;
+  color: #fff;
+}
 
 /*# sourceMappingURL=rooms.css.map */
