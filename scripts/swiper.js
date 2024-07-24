@@ -57,15 +57,15 @@ const swiper = new Swiper('.index__rooms__swiper', {
     },
 });
 
-const coreSwiper = new Swiper('.index__facilities__swiper', {
+const coreSwiper = new Swiper('.facilities__swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
 
     pagination: {
-        el: '.index__facilities__pagination',
-        bulletClass: 'index__facilities__bullet',
-        bulletActiveClass: 'index__facilities__bullet--active',
+        el: '.facilities__pagination',
+        bulletClass: 'facilities__bullet',
+        bulletActiveClass: 'facilities__bullet--active',
         clickable: true,
       },
 });
