@@ -5,10 +5,13 @@
     <link rel="icon" type="image/x-icon" href="./assets/logo_icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Miranda</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/pages/index.css" />
+    <link rel="stylesheet" href="./style/pages/offers.css" />
     <script type="text/javascript" src="./scripts/menu.js" defer></script> 
     <script type="text/javascript" src="./scripts/socials.js" defer></script> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script> 
 </head>
 <body class="content">
     <header class="header">
@@ -49,6 +52,39 @@
             <span>Offers</span>
         </div>
     </header>
+
+    <main class="offers">
+        <div class="offers__item">
+            <div class="offers__item__image">
+                <img src="./assets/rooms5.png" alt="Room image" />
+
+                <div class="offers__item__old-price"><span class="strike">$500</span><span>/Night</span></div>
+                <div class="offers__item__new-price">$345<span>/Night</span></div>
+            </div>
+            <div class="offers__item__title">Double bed</div>
+            <div class="offers__item__caption">Luxury Double Bed</div>
+            <div class="offers__item__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </div>
+            <ul class="offers__item__ul">
+                <li><img src="./assets/amenities1.png" />Air conditioner</li>
+                <li><img src="./assets/amenities2.png" />Breakfast</li>
+                <li><img src="./assets/amenities3.png" />Cleaning</li>
+                <li><img src="./assets/amenities4.png" />Grocery</li>
+                <li><img src="./assets/amenities5.png" />Shop near</li>
+
+                <li><img src="./assets/amenities8.png" />High speed WiFi</li>
+                <li><img src="./assets/amenities9.png" />Kitchen</li>
+                <li><img src="./assets/amenities10.png" />Shower</li>
+                <li><img src="./assets/amenities11.png" />Single bed</li>
+                <li><img src="./assets/amenities12.png" />Towels</li>
+            </ul>
+
+            <div class="offers__item__button">
+                <button type="button" onclick="location.href='room_detail.html';" class="button">Book now</button>
+            </div>
+        </div>
+    </main>
 
     <footer class="footer">
         <div class="footer__logo">
