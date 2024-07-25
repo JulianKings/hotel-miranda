@@ -36,6 +36,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff;
 }
 .room__title {
   font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
@@ -192,6 +193,64 @@
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   width: 58%;
+}
+.offers__popular {
+  margin-top: 1.75rem;
+  padding-bottom: 3rem;
+  background-color: #222222;
+}
+.offers__popular__title {
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: 500;
+  font-size: 0.88rem;
+  line-height: 0.95rem;
+  color: #BEAD8E;
+  letter-spacing: 0.17rem;
+  text-transform: uppercase;
+}
+.offers__popular__caption {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.56rem;
+  color: #fff;
+  font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.05rem;
+}
+.offers__popular__swiper {
+  margin: 0 1.25rem;
+  margin-top: 3rem;
+  position: relative;
+}
+.offers__popular__swiper-next, .offers__popular__swiper-prev {
+  position: absolute;
+  z-index: 9;
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  top: 5.81rem;
+  transition: background-color 0.6s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offers__popular__swiper-next:hover, .offers__popular__swiper-next:active, .offers__popular__swiper-prev:hover, .offers__popular__swiper-prev:active {
+  background-color: #BEAD8E;
+}
+.offers__popular__swiper-next img, .offers__popular__swiper-prev img {
+  width: 0.6rem;
+  height: 0.6rem;
+  object-fit: contain;
+}
+.offers__popular__swiper-next {
+  right: -0.25rem;
+}
+.offers__popular__swiper-prev {
+  left: -0.25rem;
 }
 
 /*# sourceMappingURL=offers.css.map */

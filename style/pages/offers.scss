@@ -117,4 +117,70 @@
             width: 58%;
         }
     }
+
+    &__popular {
+        margin-top: 1.75rem;
+        padding-bottom: 3rem;
+        background-color: $black;
+
+        &__title {
+            width: 100%;
+            text-align: center;
+            margin-top: 3rem;
+            font-weight: 500;
+            font-size: 0.88rem;
+            line-height: 0.95rem;
+            color: $brown;
+            letter-spacing: 0.17rem;
+            text-transform: uppercase;
+        }
+
+        &__caption {
+            width: 100%;
+            text-align: center;
+            margin-top: 1.56rem;
+            color: $white;
+            font-family: $oldtt;
+            font-weight: 400;
+            font-size: 2.5rem;
+            line-height: 3rem;
+            letter-spacing: -0.05rem;
+        }
+
+        &__swiper {
+            margin: 0 1.25rem;
+            margin-top: 3rem;
+            position: relative;
+        }
+
+        &__swiper-next, &__swiper-prev {
+            position: absolute;
+            z-index: 9;
+            width: 2rem;
+            height: 2rem;
+            background-color: $white;
+            top: 5.81rem;
+
+            transition: background-color 0.6s ease-in-out;
+            @include flex-center;
+
+            &:hover, &:active {
+                background-color: $brown;
+            }
+
+            & img {
+                width: 0.6rem;
+                height: 0.6rem;
+                object-fit: contain;
+            }
+        }
+
+        &__swiper-next {
+            right: -0.25rem;
+        }
+
+        &__swiper-prev {
+            left: -0.25rem;
+        }
+    }
 }
