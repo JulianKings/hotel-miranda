@@ -120,7 +120,7 @@
 }
 .information-header__navigation {
   position: absolute;
-  bottom: 0;
+  bottom: -0.1rem;
   right: 1.25rem;
   background-color: #fff;
   padding: 1rem 1.5rem;
