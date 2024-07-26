@@ -47,6 +47,8 @@ document.addEventListener('scroll', () => {
         menuContent.classList.toggle('header__content--hidden', true);
     } else {
         menuContent.classList.toggle('header__content--hidden', false);
+        menuContent.classList.toggle('header__content--toggle', false);
+        menuContent.classList.toggle('header__content--toggle-off', false);
     }
 });
 
@@ -62,6 +64,7 @@ document.onmousemove = (event) => {
             console.log(roundedPercentage);
             // We're on desktop
             menuContent.classList.toggle('header__content--toggle', true);
+            menuContent.classList.toggle('header__content--toggle-off', false);
         }
 
     } else {
@@ -69,6 +72,7 @@ document.onmousemove = (event) => {
         {
             // We're on desktop
             menuContent.classList.toggle('header__content--toggle', false);
+            menuContent.classList.toggle('header__content--toggle-off', true);
         }
     }
 }
