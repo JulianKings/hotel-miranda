@@ -254,4 +254,15 @@
   left: -0.25rem;
 }
 
+@media only screen and (min-width: 1000px) {
+  .offers {
+    display: flex;
+    align-items: center;
+  }
+  .offers__item {
+    width: 80%;
+    max-width: 130ch;
+  }
+}
+
 /*# sourceMappingURL=offers.css.map */

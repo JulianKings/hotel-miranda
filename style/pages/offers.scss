@@ -185,3 +185,15 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .offers {
+        display: flex;
+        align-items: center;
+
+        &__item {
+            width: 80%;
+            max-width: 130ch;
+        }
+    }
+}
