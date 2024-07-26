@@ -22,16 +22,27 @@
 
             <div class="header__content__logo">
                 <div class="header__logo__icon-box">
-                    <img src="./assets/logo_icon.png" alt="Logo Icon" />
+                    <img src="./assets/logo_icon.png" class="header__logo--small" alt="Logo Icon" />
+                    <img src="./assets/big-logo-icon.png" class="header__logo--big" alt="Logo Icon" />
                 </div>
                 <div class="header__logo">
-                    <img src="./assets/logo.png" alt="Logo" />
+                    <img src="./assets/logo.png" class="header__logo--small" alt="Logo" />
+                    <img src="./assets/big-logo.png" class="header__logo--big" alt="Logo" />
                 </div>
             </div>
 
+            <nav class="header__desktop-navlist">
+                <ul>
+                    <li class="header__navlist__item"><a href="about.html">About Us</a></li>
+                    <li class="header__navlist__item"><a href="rooms.html">Rooms</a></li>
+                    <li class="header__navlist__item"><a href="offers.html">Offers</a></li>
+                    <li class="header__navlist__item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
             <div class="header__content__actions">
-                <img src="./assets/account.png" alt="Account" />
-                <img src="./assets/search.png" alt="Search" />
+                <div class="header__content__actions__item"><img src="./assets/account.png" alt="Account" /></div>
+                <div class="header__content__actions__item"><img src="./assets/search.png" alt="Search" /></div>
             </div>
         </div>
 
@@ -46,11 +57,13 @@
     </header>
 
     <header class="information-header">
-        <div class="information-header__subtitle">the ultimate luxury experience</div>
-        <div class="information-header__title">The Perfect Base For You</div>
-        <div class="index__button-holder">
-            <button type="button" class="button">Take a tour</button>
-            <button type="button" class="button button--alternative">Learn more</button>
+        <div class="information-header__container">
+            <div class="information-header__subtitle">the ultimate luxury experience</div>
+            <div class="information-header__title">The Perfect Base For You</div>
+            <div class="index__button-holder">
+                <button type="button" class="button">Take a tour</button>
+                <button type="button" class="button button--alternative">Learn more</button>
+            </div>
         </div>
     </header>
 
