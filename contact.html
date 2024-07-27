@@ -17,16 +17,27 @@
 
             <div class="header__content__logo">
                 <div class="header__logo__icon-box">
-                    <img src="./assets/logo_icon.png" alt="Logo Icon" />
+                    <img src="./assets/logo_icon.png" class="header__logo--small" alt="Logo Icon" />
+                    <img src="./assets/big-logo-icon.png" class="header__logo--big" alt="Logo Icon" />
                 </div>
                 <div class="header__logo">
-                    <img src="./assets/logo.png" alt="Logo" />
+                    <img src="./assets/logo.png" class="header__logo--small" alt="Logo" />
+                    <img src="./assets/big-logo.png" class="header__logo--big" alt="Logo" />
                 </div>
             </div>
 
+            <nav class="header__desktop-navlist">
+                <ul>
+                    <li class="header__navlist__item"><a href="about.html">About Us</a></li>
+                    <li class="header__navlist__item"><a href="rooms.html">Rooms</a></li>
+                    <li class="header__navlist__item"><a href="offers.html">Offers</a></li>
+                    <li class="header__navlist__item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
             <div class="header__content__actions">
-                <img src="./assets/account.png" alt="Account" />
-                <img src="./assets/search.png" alt="Search" />
+                <div class="header__content__actions__item"><img src="./assets/account.png" alt="Account" /></div>
+                <div class="header__content__actions__item"><img src="./assets/search.png" alt="Search" /></div>
             </div>
         </div>
 
@@ -40,18 +51,20 @@
         </nav>
     </header>
 
-    <header class="information-header">
-        <div class="information-header__subtitle">the ultimate luxury</div>
-        <div class="information-header__title">New Details</div>
-        <div class="information-header__navigation">
-            <a href="index.html">Home</a>
-            <span id="separator">|</span>
-            <span>Blog</span>
+    <header class="information-header">        
+        <div class="information-header__container">
+            <div class="information-header__subtitle">the ultimate luxury</div>
+            <div class="information-header__title">New Details</div>
+            <div class="information-header__navigation">
+                <a href="index.html">Home</a>
+                <span id="separator">|</span>
+                <span>Blog</span>
+            </div>
         </div>
     </header>
 
     <main class="contact">
-        <section>
+        <section class="contact__item-container">
             <div class="contact__item">
                 <div class="contact__item__image">
                     <img src="./assets/mail-us.png" alt="Address">
@@ -95,19 +108,19 @@
         </section>
 
         <section class="contact__form">
-            <div class="contact__form__item">
+            <div class="contact__form__item contact__form__gridname">
                 <input type="text" class="contact__form__input contact__form__name" placeholder="Your full name" /><span></span>
             </div>
-            <div class="contact__form__item">
+            <div class="contact__form__item contact__form__gridphone">
                 <input type="tel" class="contact__form__input contact__form__phone" placeholder="Your phone number" /><span></span>
             </div>
-            <div class="contact__form__item">
+            <div class="contact__form__item contact__form__gridaddress">
                 <input type="email" class="contact__form__input contact__form__email" placeholder="Enter email address" /><span></span>
             </div>
-            <div class="contact__form__item">
+            <div class="contact__form__item contact__form__gridsubject">
                 <input type="text" class="contact__form__input contact__form__subject" placeholder="Enter subject" /><span></span>
             </div>
-            <div class="contact__form__item">
+            <div class="contact__form__item contact__form__gridtextarea">
                 <textarea rows="4" class="contact__form__textarea">Enter message</textarea><span></span>
             </div>
             <div class="contact__form__button">

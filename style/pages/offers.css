@@ -95,6 +95,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  overflow: hidden;
 }
 .offers__item {
   margin: 0 1.25rem;
@@ -251,6 +252,17 @@
 }
 .offers__popular__swiper-prev {
   left: -0.25rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .offers {
+    display: flex;
+    align-items: center;
+  }
+  .offers__item {
+    width: 80%;
+    max-width: 130ch;
+  }
 }
 
 /*# sourceMappingURL=offers.css.map */

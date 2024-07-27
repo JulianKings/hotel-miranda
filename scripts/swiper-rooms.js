@@ -26,7 +26,7 @@ const roomSwiper = new Swiper('.rooms__swiper', {
                  ${(((current+1) < total) ? (current+1) : '')}
             </div>
 
-            <div class="rooms__pagination__item">
+            <div class="rooms__pagination__item" onclick='goToSlide();'>
                 ${(current !== total) ? '...' : ''}
             </div>
 
@@ -40,3 +40,13 @@ const roomSwiper = new Swiper('.rooms__swiper', {
         }
     },
 });
+
+
+function goToSlide() {
+    let jump = prompt('Select a page: ');
+    
+    if(jump)
+    {
+        roomSwiper.slideTo((jump - 1));
+    }
+}

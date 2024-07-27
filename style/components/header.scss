@@ -1,4 +1,5 @@
 @use '../const/variables.scss' as *;
+@use '../const/mixins.scss' as *;
 
 .header {
     display: flex;
@@ -50,6 +51,10 @@
     &__logo {
         margin-left: 0.84rem;
 
+        &--big {
+            display: none;
+        }
+
         & img {
             width: 3.78rem;
             height: 1.3rem;
@@ -70,6 +75,10 @@
                 margin-top: 0;
             }
         }
+    }
+
+    &__desktop-navlist {
+        display: none;
     }
 
     &__navlist {
@@ -162,4 +171,155 @@
 #separator {
     color: $trueblack;
     margin: 0 0.5rem;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .header {
+        @include flex-center;
+        position: relative;
+        background-color: $black;
+        height: 6.25rem;
+        margin-top: -4.38rem;
+
+        &__content {
+            background-color: $white;
+            position: absolute;
+            top: 2.5rem;
+            z-index: 400;
+            max-height: 7.5rem;
+            min-height: 7.5rem;
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+
+            &--hidden {
+                height: 0;
+                max-height: 0;
+                min-height: 0;
+                overflow-y: hidden;
+                position: fixed;
+                visibility: hidden;    
+                transition: max-height 0.8s ease-in, min-height 0.8s ease-in;        
+            }
+
+            &--toggle {
+                visibility: visible;
+                min-height: 7.5rem;
+                max-height: 20vh;
+            }
+
+            &--toggle-off {
+                visibility: visible;
+                max-height: 0;
+                min-height: 0;
+            }
+
+            &__menu {
+                display: none;
+            }
+
+            &__logo {
+                margin-left: 0;
+                height: auto;
+            }
+
+            &__actions {
+                margin-right: 3%;
+                &__item {
+                    @include flex-center;
+                    height: 3.75rem;
+                    width: 3.75rem;
+                    border: 0.13rem solid rgb(133, 133, 133, .3);
+                    gap: 1.5rem;
+                }
+    
+                & img {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+            }
+        }
+
+        &__logo {
+            &--small {
+                display: none;
+            }
+
+            &--big {
+                display: block;
+            }
+
+            & img {
+                height: 3.5rem;
+                width: 8.56rem;
+                object-fit: contain;
+                margin-left: 1rem;
+            }
+
+            &__icon-box {
+                width: 5rem;
+                height: 5rem;
+
+                & img {
+                    height: 2.75rem;
+                    width: 1.94rem;
+                    object-fit: contain;
+                }
+            }
+        }
+        
+        &__desktop-navlist {
+            margin-left: 6%;
+            flex: 1 0 auto;
+            display: flex;
+
+            & ul {
+                display: flex;
+                align-items: center;
+                gap: 2%;
+                margin-bottom: 1.25rem;
+            }
+
+            & li {
+                display: inline;
+                min-width: 9ch;
+            }
+
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1.09rem;
+            color: #111111;
+        }
+    
+        &__navlist {
+            display: none;
+        }
+    }
+
+    .information-header {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        padding-top: 6rem;
+        padding-bottom: 0;
+
+        &__container {
+            width: 75%;
+            height: 100%;
+            position: relative;
+            padding-bottom: 6rem;
+        }
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        top: -10rem;
+    }
+
+    100% {
+        top: 2.5rem;
+    }
 }
