@@ -21,15 +21,32 @@ slideRight.addEventListener('mouseout', () => {
     element.src = './assets/right.png';
 });
 
-const swiper = new Swiper('.offers__popular__swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    spaceBetween: 30,
+let swiper;
+let init = false;
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.offers__popular__swiper-next',
-      prevEl: '.offers__popular__swiper-prev'
-    },
-});
+function swiperResize() {
+    if (window.innerWidth <= 1000) {
+      if (!init) {
+        init = true;
+        swiper = new Swiper('.offers__popular__swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            spaceBetween: 30,
+        
+            // Navigation arrows
+            navigation: {
+              nextEl: '.offers__popular__swiper-next',
+              prevEl: '.offers__popular__swiper-prev'
+            },
+        });
+      }
+    } else if (init) {
+      swiper.destroy();
+      init = false;
+    }
+  }
+
+  swiperResize();
+  
+  window.addEventListener("resize", swiperResize);
