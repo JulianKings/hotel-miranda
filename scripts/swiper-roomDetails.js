@@ -21,15 +21,32 @@ slideRight.addEventListener('mouseout', () => {
     element.src = './assets/right.png';
 });
 
-const swiper = new Swiper('.room-detail__related__swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    spaceBetween: 30,
+let swiper;
+let init = false;
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.room-detail__related__swiper-next',
-      prevEl: '.room-detail__related__swiper-prev'
-    },
-});
+function swiperResize() {
+    if (window.innerWidth <= 1000) {
+      if (!init) {
+        init = true;
+        swiper = new Swiper('.room-detail__related__swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            spaceBetween: 30,
+        
+            // Navigation arrows
+            navigation: {
+              nextEl: '.room-detail__related__swiper-next',
+              prevEl: '.room-detail__related__swiper-prev'
+            },
+        });
+      }
+    } else if (init) {
+      swiper.destroy();
+      init = false;
+    }
+  }
+
+swiperResize();
+
+window.addEventListener("resize", swiperResize);

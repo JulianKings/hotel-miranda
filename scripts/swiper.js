@@ -50,6 +50,14 @@ const swiper = new Swiper('.index__rooms__swiper', {
     direction: 'horizontal',
     loop: true,
 
+    breakpoints: {
+        1000: {
+            centeredSlides: true,
+            slidesPerView: 2,
+            spaceBetween: 50
+        }
+    },
+
     // Navigation arrows
     navigation: {
       nextEl: '.index__rooms__swiper-next',
@@ -57,42 +65,75 @@ const swiper = new Swiper('.index__rooms__swiper', {
     },
 });
 
-const coreSwiper = new Swiper('.facilities__swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+let coreSwiper;
+let initCore = false;
+let menuSwiper;
+let initMenu = false;
+let imageSwiper;
+let initImage = false;
 
-    pagination: {
-        el: '.facilities__pagination',
-        bulletClass: 'facilities__bullet',
-        bulletActiveClass: 'facilities__bullet--active',
-        clickable: true,
-      },
-});
+function swiperResize() {
+    if (window.innerWidth <= 1000) {
+		if (!initCore) {
+			initCore = true;
+			coreSwiper = new Swiper('.facilities__swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+            
+                pagination: {
+                    el: '.facilities__pagination',
+                    bulletClass: 'facilities__bullet',
+                    bulletActiveClass: 'facilities__bullet--active',
+                    clickable: true,
+                  },
+            });
+		} else if (initCore) {
+			coreSwiper.destroy();
+			initCore = false;
+    	}
 
-const menuSwiper = new Swiper('.index__menu__swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    spaceBetween: 30,
+        if (!initMenu) {
+			initMenu = true;
+			menuSwiper = new Swiper('.index__menu__swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+                spaceBetween: 30,
+            
+                navigation: {
+                    nextEl: '.index__menu__right',
+                    prevEl: '.index__menu__left'
+                },
+            });
+		} else if (initMenu) {
+			menuSwiper.destroy();
+			initMenu = false;
+    	}
 
-    navigation: {
-        nextEl: '.index__menu__right',
-        prevEl: '.index__menu__left'
-    },
-});
+		if (!initImage) {
+			initImage = true;
+			imageSwiper = new Swiper('.index__images__swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+                initialSlide: 1,
+                spaceBetween: 10,
+            
+                pagination: {
+                    el: '.index__images__pagination',
+                    bulletClass: 'index__images__bullet',
+                    bulletActiveClass: 'index__images__bullet--active',
+                    clickable: true,
+                  },
+            });
+		} else if (initImage) {
+			imageSwiper.destroy();
+			initImage = false;
+    	}
+	}
+}
 
-const imagesSwiper = new Swiper('.index__images__swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    initialSlide: 1,
-    spaceBetween: 10,
+swiperResize();
 
-    pagination: {
-        el: '.index__images__pagination',
-        bulletClass: 'index__images__bullet',
-        bulletActiveClass: 'index__images__bullet--active',
-        clickable: true,
-      },
-});
+window.addEventListener("resize", swiperResize);
