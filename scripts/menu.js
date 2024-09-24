@@ -61,7 +61,6 @@ document.onmousemove = (event) => {
     {
         if(desktopNav && menuCont && roundedPercentage > 7)
         {
-            console.log(roundedPercentage);
             // We're on desktop
             menuContent.classList.toggle('header__content--toggle', true);
             menuContent.classList.toggle('header__content--toggle-off', false);

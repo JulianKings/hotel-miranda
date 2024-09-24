@@ -65,10 +65,20 @@ const swiper = new Swiper('.index__rooms__swiper', {
     },
 });
 
+const menuSwiper = new Swiper('.index__menu__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 30,
+
+    navigation: {
+        nextEl: '.index__menu__right',
+        prevEl: '.index__menu__left'
+    },
+});
+
 let coreSwiper;
 let initCore = false;
-let menuSwiper;
-let initMenu = false;
 let imageSwiper;
 let initImage = false;
 
@@ -91,24 +101,6 @@ function swiperResize() {
 		} else if (initCore) {
 			coreSwiper.destroy();
 			initCore = false;
-    	}
-
-        if (!initMenu) {
-			initMenu = true;
-			menuSwiper = new Swiper('.index__menu__swiper', {
-                // Optional parameters
-                direction: 'horizontal',
-                loop: true,
-                spaceBetween: 30,
-            
-                navigation: {
-                    nextEl: '.index__menu__right',
-                    prevEl: '.index__menu__left'
-                },
-            });
-		} else if (initMenu) {
-			menuSwiper.destroy();
-			initMenu = false;
     	}
 
 		if (!initImage) {

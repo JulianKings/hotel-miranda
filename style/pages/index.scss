@@ -806,6 +806,72 @@
             }
         }
 
+        &__video {
+            display: flex;
+            background-color: #AD9D82;
+            padding: 0;
+            width: 100%;
+
+            &__container {
+                background-color: $black;
+                padding: 0 14%;
+                color: $white;
+                padding-top: 8.135rem;
+                padding-bottom: 7rem;
+                min-height: 34.75rem;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                flex: 1 0 70%;
+                position: relative;
+            }
+
+            &__caption {
+                font-size: 5rem;
+                line-height: 5.313rem;
+                max-width: 15ch;
+            }
+
+            &__description {
+                font-size: 0.875rem;
+                line-height: 1.5rem;
+                max-width: calc(20% + 42ch);
+            }
+
+            &__button {
+                max-width: 13.5rem;
+            }
+
+            &__empty {
+                width: 30%;
+            }
+
+            &__content {
+                position: absolute;
+                /* 16:9 */
+                height: 100%;
+                width: 60%;
+                max-width: 35.625rem;
+                right: min(calc(-18rem), -11%);
+                top: -6%;
+                bottom: 0;
+
+                & iframe {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto 0;
+                    width: 100%;
+                    height: 100%;
+                    max-height: 28.75rem;
+                    z-index: 3;
+                }
+            }
+        }
+
         &__images {
             @include flex-center;
             margin-top: 3.75rem;
