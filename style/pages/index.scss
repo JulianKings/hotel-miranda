@@ -419,6 +419,10 @@
         }
     }
 
+    &__menu-big {
+        display: none;
+    }
+
     &__menu {
         margin-top: 3.75rem;
         padding-left: 1.25rem;
@@ -906,6 +910,37 @@
                     width: 95%;
                 }
             }
+        }
+
+        &__menu {
+            display: none;
+
+            &__item {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            &__swiper-big {
+                width: 100%;
+                max-width: 100%;
+            
+                .swiper-slide {
+                    width: 100% !important;
+                    display: flex;
+                    gap: 2rem;
+                }
+            }
+        }
+
+        &__menu-big {
+            display: flex;
+            flex-direction: column;
+
+            margin-top: 3.75rem;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+            position: relative;
+            padding-top: 7.19rem;
         }
 
         &__stats {

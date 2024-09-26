@@ -573,6 +573,9 @@
   margin-top: 2.25rem;
   width: 64.5%;
 }
+.index__menu-big {
+  display: none;
+}
 .index__menu {
   margin-top: 3.75rem;
   padding-left: 1.25rem;
@@ -988,6 +991,31 @@
   .index__images__container img {
     height: 100%;
     width: 95%;
+  }
+  .index__menu {
+    display: none;
+  }
+  .index__menu__item {
+    width: 100%;
+    max-width: 100%;
+  }
+  .index__menu__swiper-big {
+    width: 100%;
+    max-width: 100%;
+  }
+  .index__menu__swiper-big .swiper-slide {
+    width: 100% !important;
+    display: flex;
+    gap: 2rem;
+  }
+  .index__menu-big {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    position: relative;
+    padding-top: 7.19rem;
   }
   .index__stats {
     flex-direction: row;

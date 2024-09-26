@@ -65,22 +65,14 @@ const swiper = new Swiper('.index__rooms__swiper', {
     },
 });
 
-const menuSwiper = new Swiper('.index__menu__swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    spaceBetween: 30,
-
-    navigation: {
-        nextEl: '.index__menu__right',
-        prevEl: '.index__menu__left'
-    },
-});
-
 let coreSwiper;
 let initCore = false;
 let imageSwiper;
 let initImage = false;
+let menuSwiper;
+let initMenu = false;
+let menuSwiperBig;
+let initMenuBig = false;
 
 function swiperResize() {
     if (window.innerWidth <= 1000) {
@@ -103,6 +95,27 @@ function swiperResize() {
 			initCore = false;
     	}
 
+        if (!initMenu) {
+			initMenu = true;
+			menuSwiper = new Swiper('.index__menu__swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+                spaceBetween: 30,
+            
+                navigation: {
+                    nextEl: '.index__menu__right',
+                    prevEl: '.index__menu__left'
+                },
+            });
+		} else if (initMenu) {
+            if(menuSwiper)
+            {
+                menuSwiper.destroy();
+            }
+			initMenu = false;
+    	}
+
 		if (!initImage) {
 			initImage = true;
 			imageSwiper = new Swiper('.index__images__swiper', {
@@ -123,7 +136,28 @@ function swiperResize() {
 			imageSwiper.destroy();
 			initImage = false;
     	}
-	}
+	} else {
+        if (!initMenuBig) {
+			initMenuBig = true;
+			menuSwiperBig = new Swiper('.index__menu__swiper-big', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+                spaceBetween: 30,
+            
+                navigation: {
+                    nextEl: '.index__menu__right',
+                    prevEl: '.index__menu__left'
+                },
+            });
+		} else if (initMenuBig) {
+            if(menuSwiperBig)
+            {
+                menuSwiperBig.destroy();
+            }
+			initMenuBig = false;
+    	}
+    }
 }
 
 swiperResize();
