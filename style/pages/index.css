@@ -999,23 +999,74 @@
     width: 100%;
     max-width: 100%;
   }
+  .index__menu__item:hover {
+    background-color: #222222;
+    color: white;
+  }
+  .index__menu__caption {
+    font-size: 5rem;
+    line-height: 6.18rem;
+  }
   .index__menu__swiper-big {
     width: 100%;
     max-width: 100%;
+    margin-top: 2.678rem;
   }
   .index__menu__swiper-big .swiper-slide {
     width: 100% !important;
     display: flex;
     gap: 2rem;
+    min-width: 30.625rem;
+    visibility: hidden;
+  }
+  .index__menu__swiper-big .swiper-slide-active {
+    visibility: visible;
+  }
+  .index__menu__left, .index__menu__right {
+    width: 4.375rem;
+    height: 4.375rem;
+    position: absolute;
+    top: 9.79rem;
+    right: 2.25rem;
+  }
+  .index__menu__left img, .index__menu__right img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .index__menu__left {
+    right: 8.75rem;
+  }
+  .index__menu__menu-description {
+    max-width: 50ch;
+    min-width: 13rem;
+  }
+  .index__menu__continue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .index__menu__image {
+    left: -16.313rem;
+    top: -4rem;
+    right: none;
+    width: 14.313rem;
+    height: 14.313rem;
+  }
+  .index__menu__image img {
+    width: 14.313rem;
+    height: 14.313rem;
   }
   .index__menu-big {
     display: flex;
     flex-direction: column;
-    margin-top: 3.75rem;
+    margin: 0 8%;
+    width: 84%;
+    margin-top: 12.75rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     position: relative;
     padding-top: 7.19rem;
+    position: relative;
   }
   .index__stats {
     flex-direction: row;
@@ -1036,6 +1087,15 @@
   }
   .swiper-slide-active .index__rooms__perks, .swiper-slide-active .index__rooms__information {
     display: flex;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .index__menu__continue {
+    margin: 0 10%;
+  }
+  .index__menu-big {
+    margin: 0 16%;
+    width: 68%;
   }
 }
 

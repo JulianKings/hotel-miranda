@@ -918,16 +918,72 @@
             &__item {
                 width: 100%;
                 max-width: 100%;
+
+                &:hover {
+                    background-color: $black;
+                    color: white;
+                }
+            }
+
+            &__caption {
+                font-size: 5rem;
+                line-height: 6.18rem;
             }
 
             &__swiper-big {
                 width: 100%;
                 max-width: 100%;
+                margin-top: 2.678rem;
             
                 .swiper-slide {
                     width: 100% !important;
                     display: flex;
                     gap: 2rem;
+                    min-width: 30.625rem;
+                    visibility: hidden;
+                }
+
+                .swiper-slide-active {
+                    visibility: visible;
+                }
+            }
+
+            &__left, &__right {
+                width: 4.375rem;
+                height: 4.375rem;
+                position: absolute;
+                top: 9.79rem;
+                right: 2.25rem;
+    
+                & img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+
+            &__left {
+                right: 8.75rem;
+            }
+
+            &__menu-description {
+                max-width: 50ch; 
+                min-width: 13rem;   
+            }
+
+            &__continue {
+                @include flex-center;
+            }
+
+            &__image {
+                left: -16.313rem;
+                top: -4rem;
+                right: none;
+                width: 14.313rem;
+                height: 14.313rem;
+
+                & img {
+                    width: 14.313rem;
+                    height: 14.313rem;
                 }
             }
         }
@@ -936,11 +992,15 @@
             display: flex;
             flex-direction: column;
 
-            margin-top: 3.75rem;
+            margin: 0 8%;
+            width: 84%;
+            margin-top: 12.75rem;
             padding-left: 1.25rem;
             padding-right: 1.25rem;
             position: relative;
             padding-top: 7.19rem;
+
+            position: relative;
         }
 
         &__stats {
@@ -969,6 +1029,23 @@
             &__perks, &__information {
                 display: flex;
             }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1500px) {
+
+    .index {
+        &__menu {
+            &__continue {
+                margin: 0 10%;
+            }
+        }
+
+        &__menu-big {
+            margin: 0 16%;
+            width: 68%;
         }
     }
 }

@@ -90,10 +90,7 @@ function swiperResize() {
                     clickable: true,
                   },
             });
-		} else if (initCore) {
-			coreSwiper.destroy();
-			initCore = false;
-    	}
+		}
 
         if (!initMenu) {
 			initMenu = true;
@@ -108,13 +105,7 @@ function swiperResize() {
                     prevEl: '.index__menu__left'
                 },
             });
-		} else if (initMenu) {
-            if(menuSwiper)
-            {
-                menuSwiper.destroy();
-            }
-			initMenu = false;
-    	}
+		}
 
 		if (!initImage) {
 			initImage = true;
@@ -132,11 +123,34 @@ function swiperResize() {
                     clickable: true,
                   },
             });
-		} else if (initImage) {
+		}
+
+        if (initMenuBig) {
+            if(menuSwiperBig)
+            {
+                menuSwiperBig.destroy();
+            }
+			initMenuBig = false;
+    	}
+	} else {
+        if (initImage) {
 			imageSwiper.destroy();
 			initImage = false;
     	}
-	} else {
+
+        if (initMenu) {
+            if(menuSwiper)
+            {
+                menuSwiper.destroy();
+            }
+			initMenu = false;
+    	}
+
+        if (initCore) {
+			coreSwiper.destroy();
+			initCore = false;
+    	}
+        
         if (!initMenuBig) {
 			initMenuBig = true;
 			menuSwiperBig = new Swiper('.index__menu__swiper-big', {
@@ -150,13 +164,7 @@ function swiperResize() {
                     prevEl: '.index__menu__left'
                 },
             });
-		} else if (initMenuBig) {
-            if(menuSwiperBig)
-            {
-                menuSwiperBig.destroy();
-            }
-			initMenuBig = false;
-    	}
+		}
     }
 }
 

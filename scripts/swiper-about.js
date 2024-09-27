@@ -20,10 +20,7 @@ function swiperResize() {
 					clickable: true,
 				},
 			});
-		} else if (initCore) {
-			coreSwiper.destroy();
-			initCore = false;
-    	}
+		}
 
 		if (!initImage) {
 			initImage = true;
@@ -40,7 +37,14 @@ function swiperResize() {
 					clickable: true,
 				},
 			});
-		} else if (initImage) {
+		}
+	} else {
+		if (initCore) {
+			coreSwiper.destroy();
+			initCore = false;
+    	}
+
+		if (initImage) {
 			imageSwiper.destroy();
 			initImage = false;
     	}
