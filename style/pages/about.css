@@ -146,6 +146,52 @@
   background-color: #BEAD8E;
 }
 
+@media only screen and (min-width: 1000px) {
+  .facilities {
+    margin-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+  .facilities__title {
+    margin-top: 7.385rem;
+  }
+  .facilities__title--dark {
+    margin-top: 7.385rem;
+  }
+  .facilities__caption {
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-top: 1.625rem;
+  }
+  .facilities__caption--dark {
+    margin-top: 1.625rem;
+  }
+  .facilities__swiper {
+    margin: 0 1.25rem;
+    margin-top: 4.99rem;
+    height: auto;
+    position: relative;
+    width: 100%;
+  }
+  .facilities__swiper .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, min(30%, 23.438rem));
+    grid-template-rows: auto;
+    width: 100%;
+    justify-content: center;
+    gap: 1.875rem;
+  }
+  .facilities__container {
+    max-width: 23.438rem;
+    padding: 0 3.732rem;
+    padding-bottom: 2.079rem;
+  }
+  .facilities__pagination {
+    display: none;
+  }
+  .facilities__image {
+    margin-top: 3.75rem;
+  }
+}
 .about {
   overflow: hidden;
 }
@@ -173,6 +219,9 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1.25rem;
+}
+.about__options__extra {
+  display: none;
 }
 .about__options__item {
   min-height: 9.88rem;
@@ -345,6 +394,153 @@
 }
 .about__images__bullet--active {
   background-color: #BEAD8E;
+}
+
+@media only screen and (min-width: 1000px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 3rem;
+    align-items: center;
+  }
+  .about__video {
+    margin: 0 10%;
+    margin-top: 7.5rem;
+  }
+  .about__video__content {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+    width: 100%;
+    max-width: 73.125rem;
+  }
+  .about__video__content iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+  .about__video__description {
+    margin-top: 4.241rem;
+    font-size: 4.5rem;
+    line-height: 5.562rem;
+    letter-spacing: -0.135rem;
+    max-width: 66.5rem;
+  }
+  .about__options {
+    margin: 0 10%;
+    margin-top: 4.572rem;
+    max-width: 73.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .about__options__extra {
+    display: block;
+  }
+  .about__options__item {
+    flex: 1 0 12.5rem;
+    min-height: 12.5rem;
+  }
+  .about__restaurant {
+    margin: 0 10%;
+    margin-top: 2.5rem;
+    max-width: 73.125rem;
+    box-shadow: 0 0.875rem 1.5rem rgba(184, 184, 184, 0.102);
+    padding: 2.5rem 2.625rem;
+    display: flex;
+    align-items: center;
+  }
+  .about__restaurant__image {
+    min-height: 26.25rem;
+    height: 100%;
+    flex: 1 0 45%;
+    max-width: 33.125rem;
+    margin-right: 3.572rem;
+    display: flex;
+    align-items: center;
+  }
+  .about__restaurant__image img {
+    height: 100%;
+    max-height: 100%;
+  }
+  .about__restaurant__title {
+    margin-top: 0;
+  }
+  .about__restaurant__caption {
+    font-size: 3rem;
+    line-height: 3.708rem;
+  }
+  .about__restaurant__description {
+    font-size: 0.874rem;
+    line-height: 1.5rem;
+  }
+  .about__restaurant__button {
+    max-width: 13.5rem;
+  }
+  .about__counter {
+    padding: 0 10%;
+    margin-top: 7.428rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .about__counter__caption {
+    font-size: 5rem;
+    line-height: 6.18rem;
+  }
+  .about__counter__facts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+  }
+  .about__counter__item {
+    max-width: 23.125rem;
+  }
+  .about__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.75rem;
+  }
+  .about__images__swiper {
+    margin-bottom: 3.5rem;
+    margin-top: 3.75rem;
+    width: 100%;
+    height: 25rem;
+    max-height: 25rem;
+    padding: 0 1.25rem;
+    min-height: 22.88rem;
+  }
+  .about__images__swiper .swiper-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .about__images__container {
+    width: 50%;
+    height: 25rem;
+    height: 100%;
+    max-height: 25rem;
+    padding: 0;
+    margin: 0;
+  }
+  .about__images__container img {
+    height: 100%;
+    width: 95%;
+  }
+  .about__images__pagination {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=about.css.map */

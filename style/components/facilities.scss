@@ -148,3 +148,64 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .facilities {
+        margin-top: 0;
+
+        &--dark {
+            margin-top: 7.385rem;
+            padding-bottom: 7.5rem;
+        }
+
+        &__title {
+            margin-top: 7.385rem;
+
+            &--dark {
+                margin-top: 7.385rem;
+            }
+        }
+
+        &__caption {
+            font-size: 5rem;
+            line-height: 5rem;
+            margin-top: 1.625rem;
+
+            &--dark {
+                margin-top: 1.625rem;
+            }
+        }
+
+        &__swiper {
+            margin: 0 1.25rem;
+            margin-top: 4.99rem;
+            height: auto;
+            position: relative;
+            width: 100%;
+
+            & .swiper-wrapper {
+                display: grid;
+                grid-template-columns: repeat(3, min(30%, 23.438rem));
+                grid-template-rows: auto;
+                width: 100%;
+                justify-content: center;
+                gap: 1.875rem;
+            }
+
+        }
+
+        &__container {
+            max-width: 23.438rem;
+            padding: 0 3.732rem;
+            padding-bottom: 2.079rem;
+        }
+
+        &__pagination {
+            display: none;
+        }
+
+        &__image {
+            margin-top: 3.75rem;
+        }
+    }
+}

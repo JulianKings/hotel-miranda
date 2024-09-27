@@ -110,6 +110,10 @@
         background-color: $lightgray;
         padding-bottom: 10.94rem;
 
+        &__tile {
+            display: none;
+        }
+
         &__title {
             font-weight: 700;
             font-size: 0.81rem;
@@ -243,6 +247,13 @@
             @include basicCaption;
             text-align: center;
             color: $black;
+        }
+
+        &__name-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         &__swiper {
@@ -406,6 +417,10 @@
             margin-top: 2.25rem;
             width: 64.5%;
         }
+    }
+
+    &__menu-big {
+        display: none;
     }
 
     &__menu {
@@ -605,6 +620,432 @@
             font-weight: 709;
             font-size: 1;
             line-height: 1.36rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__button-holder {
+            display: flex;
+            flex-direction: row;
+            gap: 1.875rem;
+
+            & button {
+                max-width: 13.5rem;
+            }
+        }
+
+        &__calendar {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding: 2.313rem 10%;
+
+            &__form {
+                max-width: 20.625rem;
+            }
+
+            &__form-container {
+                width: 70%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 1.875rem;
+            }
+
+            &__button {
+                width: 30%;
+                display: flex;
+                justify-content: flex-start;
+
+                & button {
+                    max-width: 15.625rem;
+                }
+            }
+        }
+
+        &__discover-wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 4.759rem;
+        }
+
+        &__about {
+            width: 100vw;
+            position: relative;
+            max-width: 30.563rem;
+            background-color: white;
+            z-index: 1;
+
+            & > * {
+                position: relative;
+                z-index: 5;
+            }
+
+            &__caption {
+                font-size: 5rem;
+                line-height: 5.625rem;
+            }
+
+            &__description {
+                font-size: 0.875rem;
+                line-height: 1.5rem;
+                max-width: 28.563rem;
+            }
+
+            &__button {
+                max-width: 13.5rem;
+            }
+
+            &__tile {
+                display: block;
+                position: absolute;
+                width: 500%;
+                height: 85%;
+                top: 6.25rem;
+                left: -11.572rem;
+                background-color: $lightgray;
+            }
+        }
+
+        &__image-cards {
+            display: flex;
+            flex-direction: row;
+            gap: 1.875rem;
+
+            position: static;
+            margin-bottom: 7.5rem;
+            z-index: 5;
+
+            &__card {
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 1.875rem;
+                max-height: 100rem;
+            }
+
+            &__content {
+                padding: 0 2.188rem;
+                max-height: 35rem;
+                height: fit-content;
+            }
+
+            &__description {
+                margin-bottom: 2.188rem;
+            }
+
+            &__card-reverse {
+                display: flex;
+                flex-direction: column;
+                gap: 1.875rem;
+                margin-top: 1.875rem;
+            }
+        }
+
+        &__rooms {
+            margin-top: 7.375rem;
+
+            &__container {
+                width: 100%;
+
+
+            }
+
+            &__image {
+            
+                & img {
+                    max-height: 31.25rem;
+                    width: 100%;
+                    aspect-ratio: 1 / 0.65;
+                }
+            }
+
+            &__information {
+                top: -2.31rem;
+                flex-direction: row;
+                width: 90%;
+            }
+
+            &__name-box {
+                justify-content: flex-start;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            &__room-name, &__room-desc {
+                text-align: left;
+                max-width: 50ch;
+            }
+
+            &__room-price {
+                padding-left: 0.36rem;
+            }
+
+            &__perks, &__information {
+                display: none;
+            }
+
+            &__swiper-next, &__swiper-prev {
+                width: 5rem;
+                height: 5rem;
+                top: 30%;
+    
+                & img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+    
+            &__swiper-next {
+                right: 18%;
+            }
+    
+            &__swiper-prev {
+                left: 18%;
+            }
+        }
+
+        &__video {
+            display: flex;
+            background-color: #AD9D82;
+            padding: 0;
+            width: 100%;
+
+            &__container {
+                background-color: $black;
+                padding: 0 14%;
+                color: $white;
+                padding-top: 8.135rem;
+                padding-bottom: 7rem;
+                min-height: 34.75rem;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                flex: 1 0 70%;
+                position: relative;
+            }
+
+            &__caption {
+                font-size: 5rem;
+                line-height: 5.313rem;
+                max-width: 15ch;
+            }
+
+            &__description {
+                font-size: 0.875rem;
+                line-height: 1.5rem;
+                max-width: calc(20% + 42ch);
+            }
+
+            &__button {
+                max-width: 13.5rem;
+            }
+
+            &__empty {
+                width: 30%;
+            }
+
+            &__content {
+                position: absolute;
+                /* 16:9 */
+                height: 100%;
+                width: 60%;
+                max-width: 35.625rem;
+                right: min(calc(-18rem), -11%);
+                top: -6%;
+                bottom: 0;
+
+                & iframe {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto 0;
+                    width: 100%;
+                    height: 100%;
+                    max-height: 28.75rem;
+                    z-index: 3;
+                }
+            }
+        }
+
+        &__images {
+            @include flex-center;
+            margin-top: 3.75rem;
+    
+            &__swiper {
+                margin-bottom: 3.5rem;
+                margin-top: 3.75rem;
+                width: 100%;
+                height: 23.125rem;
+                max-height: 23.125rem;
+                padding: 0 1.25rem;
+                min-height: calc(20.94rem + 1.5rem + 0.44rem);
+
+                & .swiper-wrapper {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    gap: 1rem;
+                }
+            }
+
+            &__container {
+                width: 33%;
+                height: 100%;
+                aspect-ratio: 0.85 / 1;
+                max-height: 23.125rem;
+                padding: 0;
+                margin: 0;
+
+                & img {
+                    height: 100%;
+                    width: 95%;
+                }
+            }
+        }
+
+        &__menu {
+            display: none;
+
+            &__item {
+                width: 100%;
+                max-width: 100%;
+
+                &:hover {
+                    background-color: $black;
+                    color: white;
+                }
+            }
+
+            &__caption {
+                font-size: 5rem;
+                line-height: 6.18rem;
+            }
+
+            &__swiper-big {
+                width: 100%;
+                max-width: 100%;
+                margin-top: 2.678rem;
+            
+                .swiper-slide {
+                    width: 100% !important;
+                    display: flex;
+                    gap: 2rem;
+                    min-width: 30.625rem;
+                    visibility: hidden;
+                }
+
+                .swiper-slide-active {
+                    visibility: visible;
+                }
+            }
+
+            &__left, &__right {
+                width: 4.375rem;
+                height: 4.375rem;
+                position: absolute;
+                top: 9.79rem;
+                right: 2.25rem;
+    
+                & img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+
+            &__left {
+                right: 8.75rem;
+            }
+
+            &__menu-description {
+                max-width: 50ch; 
+                min-width: 13rem;   
+            }
+
+            &__continue {
+                @include flex-center;
+            }
+
+            &__image {
+                left: -16.313rem;
+                top: -4rem;
+                right: none;
+                width: 14.313rem;
+                height: 14.313rem;
+
+                & img {
+                    width: 14.313rem;
+                    height: 14.313rem;
+                }
+            }
+        }
+
+        &__menu-big {
+            display: flex;
+            flex-direction: column;
+
+            margin: 0 8%;
+            width: 84%;
+            margin-top: 12.75rem;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+            position: relative;
+            padding-top: 7.19rem;
+
+            position: relative;
+        }
+
+        &__stats {
+            flex-direction: row;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding: 5rem 5rem;
+            align-items: center;
+            justify-content: center;
+            gap: 4.45rem;
+            text-align: left;
+
+            &__item {
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            &__title, &__description {
+                text-align: left;
+            }
+        }
+    }
+
+    .swiper-slide-active {
+        & .index__rooms {
+            &__perks, &__information {
+                display: flex;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1500px) {
+
+    .index {
+        &__menu {
+            &__continue {
+                margin: 0 10%;
+            }
+        }
+
+        &__menu-big {
+            margin: 0 16%;
+            width: 68%;
         }
     }
 }
